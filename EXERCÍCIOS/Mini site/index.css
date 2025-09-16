@@ -1,0 +1,39 @@
+        li{
+            list-style-type: none;
+        }
+        .quadrado{
+            border: 4px solid #8C673A;
+            border-radius: 20px;
+            background-color: #F2D6A2;
+        }
+        a{
+            color: #021859;
+        }
+        h1{
+            font-style: oblique;
+            color: #8C673A;
+        }
+        body{
+            background-color:black;
+            text-align: center;
+        }
+        img{
+            align-items: center;
+            border-radius: 25%;
+            width: 200px;
+            right: 200px;
+        }
+        p{
+            font-size: 20px;
+            font-style:oblique;
+        }
+        .retangulo{
+            border: 1px solid #8C673A;
+            border-radius: 50px;
+            background-color: #D9C2AD;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .rodapé{
+            background-color: #021859;
+        }

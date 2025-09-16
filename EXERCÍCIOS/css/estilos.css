@@ -1,0 +1,17 @@
+ body{
+            text-align: center;
+            background-color: beige;
+        }
+        .quadrado{
+            border: 2px solid #000000;
+            border-radius: 20px;
+            background-color: #ff6f02;
+            width: 320px;
+            
+        }
+        img{
+            align-items: center;
+            border-radius: 50%;
+            width: 200px;
+            right: 200px;
+        }
