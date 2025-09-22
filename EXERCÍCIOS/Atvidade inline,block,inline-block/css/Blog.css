@@ -1,0 +1,26 @@
+body{
+    font-family: 'Garamond',Serif;
+    margin: 20px;
+    background-color: #e5d8d0;
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 20px 40px 15px 15px;
+}
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 20px 40px 15px 15px;
+}
+img{
+    display: block;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    border: 5px solid #000000;
+}
