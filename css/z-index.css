@@ -1,0 +1,31 @@
+h1 {/*seletor global*/
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style:normal;
+  font-size: 40px;
+}
+div{
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+}
+.box1{
+    background-color: rgb(0, 255, 170);
+    z-index: 2;
+}
+.box2{
+    background-color:aqua;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+.box3{
+    background-color:rgb(0, 166, 255);
+    top: 100px;
+    left: 100px;
+}
