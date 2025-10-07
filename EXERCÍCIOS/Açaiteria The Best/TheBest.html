@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1 class="titulo">THE BEST<img src="./Captura de tela 2025-10-06 153811.png" alt="logo"></h1>
+        <div class="inicio">
+            <h1 class="titulo">THE BEST<img class="logo" src="./Captura de tela 2025-10-06 153811.png" alt="logo"></h1>
         </div>
         
         <ul class="menu">
@@ -20,12 +20,40 @@
         </ul>
     </header>
     <main>
-        <div>
-            O melhor açai do mundo, só no The Best
+        <div class="pts">
+            <div class="pt1">
+                <img class="suco" src="./Design_sem_nome__2_-removebg-preview.png" alt="">
+                <div class="sobrepos">
+                    <p>O melhor açai do mundo,<br><span class="inter">só no</span><br> <span style="font-weight: bold;">THE BEST</span></p>   
+                </div>
+            </div>
+        </div>
+        <div class="conheca">
+            <h1 class="titulo">Conheça <br> nossos <br> Sabores </h1> 
+            <img src="https://media.istockphoto.com/id/1398208884/pt/foto/acai-bowl-with-strawberry-and-banana.webp?a=1&b=1&s=612x612&w=0&k=20&c=DIlCVhUbA_G8V13YZVGXF9Q-e8TFtr2ve5pHVRThmdM=" alt="açai com toppings">
+            <button>
+                Saiba mais ➡️
+            </button>
+        </div>
+        <div class="caixa">
+            <label for="">Receba nossas ofertas cadastrando seu e-mail aqui</label>
+            <br>
+            <div class="cadastre">
+                <input type="e-mail" class="e-mail"> 
+                <button class="botao">Cadastre</button>
+            </div>
+        </div>
+        <div class="conheca">
+            <img class="ifood" src="https://institucional.ifood.com.br/wp-content/uploads/2023/10/iFN_capa-ifoodja-1024x692-1.webp" alt="ifood">
+            <button>
+               <a href="https://www.ifood.com.br/delivery/andradina-sp/the-best-acai-stella-maris/7ed9138a-89a9-425b-b974-eb24ae16429c">Ir ➡️</a> 
+            </button>
+            <h1 class="titulo">Veja no <br> Ifood </h1> 
         </div>
     </main>
-    <footer>
-
+    <footer class="rodapé">
+        <img src="data:image/png;base64,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" alt="logo">
+        <p class="texto">© Copyright 2025 - SENAI - Todos os direitos reservados ao SESI/SENAI com o estudantes</p>
     </footer>
 </body>
 </html>
