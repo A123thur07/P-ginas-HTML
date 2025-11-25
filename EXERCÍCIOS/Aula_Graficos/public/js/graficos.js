@@ -15,21 +15,54 @@
     Chart.defaults.font.family = 'Arial';
 
     //Gráfico de linha
-    const graficoLinha = document.getElementById('lineChart')
-    if (graficoLinha) {
-        new Chart(graficoLinha, {
-            type: 'line',
+    const  graficoDuplo= {
+        type: 'line',
+        data: data,
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: ''
+                }
+            },
+            scales: {
+                y: {
+                    stacked: true
+                }
+            }
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: { color: '#555555ff' }
+                },
+                tooltip: { mode: 'index', intersect: false }
+            },
+            interaction: { mode: 'nearest', axis: 'x', intersect: false },
+            scales: {
+                x: { grid: { display: false } },
+                y: { beginaAtZero: true }
+            }
+        }
+    }
+
+
+    //Gráfico de barras
+    const graficoBarra = document.getElementById('barChart')
+    if (graficoBarra) {
+        new Chart(graficoBarra, {
+            type: 'bar',
             data: {
-                labels: line.labels,
+                labels: bar.labels,
                 datasets: [{
                     label: 'vendas',
-                    data: line.values,
+                    data: bar.values,
                     borderColor: paleta.cyano,
-                    backgoundColor: paleta.verde,
-                    fill: true,
-                    tension: 0.35,
-                    pointRadius: 3,
-                    pointHoverRadius: 5
+                    backgoundColor: [paleta.azul, paleta.violeta, paleta.pink, paleta.verde],
+                    borderRadius: 6
                 }]
             },
             options: {
@@ -40,9 +73,7 @@
                         display: true,
                         labels: { color: '#555555ff' }
                     },
-                    tooltip: { mode: 'index', intersect: false }
                 },
-                interaction: { mode: 'nearest', axis: 'x', intersect: false },
                 scales: {
                     x: { grid: { display: false } },
                     y: { beginaAtZero: true }
@@ -51,64 +82,32 @@
         })
     }
 
-//Gráfico de barras
-const graficoBarra = document.getElementById('barChart')
-if (graficoBarra) {
-    new Chart(graficoBarra, {
-        type: 'bar',
-        data: {
-            labels: bar.labels,
-            datasets: [{
-                label: 'vendas',
-                data: bar.values,
-                borderColor: paleta.cyano,
-                backgoundColor: [paleta.azul, paleta.violeta, paleta.pink, paleta.verde],
-                borderRadius: 6
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    display: true,
-                    labels: { color: '#555555ff' }
-                },
+    //Gráfico de Pizza
+    const graficoPizza = document.getElementById('pieChart')
+    if (graficoPizza) {
+        new Chart(graficoPizza, {
+            type: 'pie',
+            data: {
+                labels: pie.labels,
+                datasets: [{
+                    label: 'vendas',
+                    data: pie.values,
+                    borderColor: paleta.cyano,
+                    backgoundColor: [paleta.azul, paleta.violeta, paleta.pink, paleta.verde],
+                    hoverOffset: 6
+                }]
             },
-            scales: {
-                x: { grid: { display: false } },
-                y: { beginaAtZero: true }
-            }
-        }
-    })
-}
-
-//Gráfico de Pizza
-const graficoPizza = document.getElementById('pieChart')
-if (graficoPizza) {
-    new Chart(graficoPizza, {
-        type: 'pie',
-        data: {
-            labels: pie.labels,
-            datasets: [{
-                label: 'vendas',
-                data: pie.values,
-                borderColor: paleta.cyano,
-                backgoundColor: [paleta.azul, paleta.violeta, paleta.pink, paleta.verde],
-                hoverOffset: 6
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'bottom'
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
                 }
             }
-        }
-    })
-}
-console.log(window);
+        })
+    }
+    console.log(window);
 
-}) ();
+})();
