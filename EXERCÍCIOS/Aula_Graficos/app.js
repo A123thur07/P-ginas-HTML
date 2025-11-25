@@ -8,15 +8,7 @@ app.set('views', path.join(__dirname,'views'));
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 const dadosExemplo = {
-    line: {
-        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul'],
-        values: [12,19,3,5,2,3,15]
-    },
-    bar: {
-        labels: ['Bicicleta', 'Patins', 'Iphone', 'Ipad'],
-        values: [35,19,22,29]
-    },
-    pie: {
+    doughnut: {
         labels: ['Mobile', 'Desktop', 'Tablet'],
         values: [55,19,10]
     },
