@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/calculadora.js" defer></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calcule aqui</h1>
+    </header>
+
+    <main>
+        <div>
+            <form action="">
+                <label for="">1º Número</label>
+                <input type="number" id="num1">
+                <label for="">2º Número</label>
+                <input type="number" id="num2">
+                <button type="button" onclick="somar()">+</button>
+                <button type="button" onclick="subtrair()">-</button>
+                <button type="button" onclick="multiplicar()">x</button>
+                <button type="button" onclick="dividir()">/</button>
+                <button type="button" onclick="reset()">reset</button>
+                <label for="">Resultado</label>
+                <p type="number" id="result"></p>
+            </form>  
+        </div>
+
+        <div>
+            <h1>Verificações</h1>
+            <p>É maior, menor ou igual?</p>
+            <p id="maior_menor_igual"></p>
+            <p>Quais são pares?</p>
+            <p id="pares"></p>
+            <p>Quais são multiplus?</p>
+            <p id="multiplus"></p>
+            <p>A soma dos dois é par ou impar?</p>
+            <p id="soma_par_impar"></p>
+            <p>O 1º número é negativo?</p>
+            <p id="1ºnegativo"></p>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

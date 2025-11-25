@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div {
+    background-color: rgb(0, 255, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 50px;
+    border: 1px solid black;
+   
+}
+
+
+
+form>input {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form>button {
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 15px;
+    width: 65px;
+    height: 30px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+form > button:hover{
+    scale: 1.1;
+    transition: 0.5;
+    cursor: pointer;
+}
